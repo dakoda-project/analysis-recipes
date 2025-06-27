@@ -7,10 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pandas = "^2.1.3"
 jupyter = "^1.1.1"
+itables = "^2.4.2"
+polars = "^1.30.0"
 cas-visualizer = "^0.0.9"
 dakoda-core = {path = "../dakoda-core/"}
+xsdata = "22.12"
 
 [build-system]
 requires = ["poetry-core"]
