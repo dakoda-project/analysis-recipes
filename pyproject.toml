@@ -10,10 +10,11 @@ python = "^3.11"
 jupyter = "^1.1.1"
 itables = "^2.4.2"
 polars = "^1.30.0"
-cas-visualizer = "^0.0.10"
+cas-visualizer = "^0.1.1"
 dakoda-core = {path = "../dakoda-core/"}
 xsdata = "22.12"
 textstat = "^0.7.3"
+seaborn = "^0.13.2"
 
 [build-system]
 requires = ["poetry-core"]
