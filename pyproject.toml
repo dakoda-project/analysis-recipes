@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.14"
 jupyter = "^1.1.1"
 itables = "^2.4.2"
 polars = "^1.30.0"
@@ -15,6 +15,8 @@ dakoda-core = {path = "../dakoda-core/"}
 xsdata = "22.12"
 textstat = "^0.7.3"
 seaborn = "^0.13.2"
+spacy = "3.8.7"
+CairoSVG = "2.8.2"
 
 [build-system]
 requires = ["poetry-core"]
