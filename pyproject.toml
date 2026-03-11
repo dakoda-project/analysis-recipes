@@ -1,22 +1,32 @@
 [tool.poetry]
-name = "analsis-recipes"
+name = "analysis-recipes"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Analysis recipes for corpus linguistics research using Dakoda"
+authors = ["Dakoda Team"]
 readme = "README.md"
+packages = [
+    {include = "analysis_recipes"}
+]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
-jupyter = "^1.1.1"
+jupyter = "1.0.0"
+notebook = "6.5.7"
+jupyter-core = ">=5.0"
+jupyter-client = ">=5.3,<8"
+jupyter_contrib_nbextensions = "0.7.0"
 itables = "^2.4.2"
 polars = "^1.30.0"
 cas-visualizer = "^0.1.1"
-dakoda-core = {path = "../dakoda-core/"}
+dakoda-core = {path = "../dakoda-core/", develop = true}
 xsdata = "22.12"
 textstat = "^0.7.3"
 seaborn = "^0.13.2"
 spacy = "3.8.7"
 CairoSVG = "2.8.2"
+
+[tool.poetry.extras]
+dev = []
 
 [build-system]
 requires = ["poetry-core"]
